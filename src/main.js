@@ -1,4 +1,7 @@
 import { createApp } from 'vue'
+import { ElInput, ElButton } from "element-plus";
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App);
+app.use(ElInput).use(ElButton);
+app.mount("#app");
